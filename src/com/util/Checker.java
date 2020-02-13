@@ -19,6 +19,7 @@ public class Checker {
 		if (!expression) {
 			throw new IllegalArgumentException(String.format(errorMessageTemplate, errorMessageArgs));
 		}
+		
 	}
 
 	public static void checkState(boolean expression) {
@@ -31,6 +32,8 @@ public class Checker {
 		if (!expression) {
 			throw new IllegalStateException(String.valueOf(errorMessage));
 		}
+		
+		
 	}
 
 	public static void checkState(boolean expression, String errorMessageTemplate, Object... errorMessageArgs) {
@@ -53,6 +56,7 @@ public class Checker {
 		} else {
 			return reference;
 		}
+		
 	}
 
 	public static <T> T checkNotNull(T reference, String errorMessageTemplate, Object... errorMessageArgs) {
