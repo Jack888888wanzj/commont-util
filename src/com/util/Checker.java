@@ -19,6 +19,7 @@ public class Checker {
 		if (!expression) {
 			throw new IllegalArgumentException(String.format(errorMessageTemplate, errorMessageArgs));
 		}
+		
 	}
 
 	public static void checkState(boolean expression) {
