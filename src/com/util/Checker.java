@@ -32,6 +32,8 @@ public class Checker {
 		if (!expression) {
 			throw new IllegalStateException(String.valueOf(errorMessage));
 		}
+		
+		
 	}
 
 	public static void checkState(boolean expression, String errorMessageTemplate, Object... errorMessageArgs) {
