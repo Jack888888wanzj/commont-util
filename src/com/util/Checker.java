@@ -56,6 +56,7 @@ public class Checker {
 		} else {
 			return reference;
 		}
+		
 	}
 
 	public static <T> T checkNotNull(T reference, String errorMessageTemplate, Object... errorMessageArgs) {
