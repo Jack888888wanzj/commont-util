@@ -11,6 +11,7 @@ public class Checker {
 
 	
 	public static void checkArgument(boolean expression, Object errorMessage) {
+		System.out.print("3333");
 		if (!expression) {
 			throw new IllegalArgumentException(String.valueOf(errorMessage));
 		}
