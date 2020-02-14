@@ -4,14 +4,12 @@ package com.util;
 public class Checker {
 	public static void checkArgument(boolean expression) {
 		if (!expression) {
-			System.out.print("222");
 			throw new IllegalArgumentException();
 		}
 	}
 
 	
 	public static void checkArgument(boolean expression, Object errorMessage) {
-		System.out.print("3333");
 		if (!expression) {
 			throw new IllegalArgumentException(String.valueOf(errorMessage));
 		}
