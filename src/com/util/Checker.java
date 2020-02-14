@@ -4,6 +4,7 @@ package com.util;
 public class Checker {
 	public static void checkArgument(boolean expression) {
 		if (!expression) {
+			System.out.print("222");
 			throw new IllegalArgumentException();
 		}
 	}
